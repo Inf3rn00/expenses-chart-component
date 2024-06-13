@@ -1,0 +1,152 @@
+:root {
+  --softred: hsl(10, 79%, 65%);
+  --cyan: hsl(186, 34%, 60%);
+  --DarkBrown: hsl(25, 47%, 15%);
+  --MediumBrown: hsl(28, 10%, 53%);
+  --cream: hsl(27, 66%, 92%);
+  --veryPaleOrange: hsl(33, 100%, 98%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans";
+}
+
+body {
+  background-color: var(--cream);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100dvh;
+}
+
+.wrapper {
+  max-width: 450px;
+}
+
+.top-container {
+  background-color: var(--softred);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--veryPaleOrange);
+  height: 90px;
+  padding: 0 30px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.balance {
+  font-size: 22px;
+  font-weight: 700;
+  margin-top: 5px;
+}
+
+.img {
+  width: 50px;
+}
+
+.body-container {
+  background-color: var(--veryPaleOrange);
+  border-radius: 10px;
+  padding: 30px;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--DarkBrown);
+}
+
+.chart {
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+  height: 200px;
+  justify-content: space-between;
+  text-align: center;
+  color: var(--MediumBrown);
+}
+
+.day1 {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: var(--softred);
+}
+
+.day2 {
+  width: 40px;
+  height: 80px;
+  border-radius: 5px;
+  background-color: var(--softred);
+}
+
+.day3 {
+  width: 40px;
+  height: 130px;
+  border-radius: 5px;
+  background-color: var(--cyan);
+}
+
+.day4 {
+  width: 40px;
+  height: 70px;
+  background-color: var(--softred);
+  border-radius: 5px;
+}
+
+.day5 {
+  width: 40px;
+  height: 55px;
+  background-color: var(--softred);
+  border-radius: 5px;
+}
+
+.day6 {
+  width: 40px;
+  height: 110px;
+  background-color: var(--softred);
+  border-radius: 5px;
+}
+
+.day7 {
+  width: 40px;
+  height: 65px;
+  background-color: var(--softred);
+  border-radius: 5px;
+}
+
+.day {
+  margin-bottom: 20px;
+}
+
+hr {
+  border: solid 0.1px;
+  font-weight: 400;
+  color: var(--MediumBrown);
+  margin-bottom: 20px;
+}
+
+.bottom-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bottom-container p {
+  color: var(--MediumBrown);
+}
+
+.left-price h2 {
+  color: var(--DarkBrown);
+  font-size: 35px;
+}
+
+.right-price .percent {
+  color: var(--DarkBrown);
+  font-weight: 600;
+  text-align: right;
+}
